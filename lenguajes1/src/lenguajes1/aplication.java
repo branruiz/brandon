@@ -72,7 +72,7 @@ public class aplication extends javax.swing.JFrame {
         pk.altura=1.68f;
         imc modelo=new imc();
 modelo.u=pk;
-etiqueta.setText(modelo.calcular());
+resultado.setText(modelo.calcular());
     }//GEN-LAST:event_botoncitoActionPerformed
 
     /**
