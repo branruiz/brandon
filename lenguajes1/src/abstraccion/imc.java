@@ -1,5 +1,5 @@
 
-package lenguajes1;
+package abstraccion;
 
 public class imc {
     Usuario u;
@@ -7,7 +7,7 @@ public class imc {
     
     public String calcular(){
     
-        float mivalor=u.peso/(u.altura+u.altura);
+        float mivalor=u.getPeso()/(u.getAltura()+u.getAltura());
     resultado="tu imc es:" +mivalor;
     return resultado;
     }
