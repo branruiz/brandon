@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package abstraccion;
 
 /**
@@ -100,8 +95,15 @@ public class aplication extends javax.swing.JFrame {
     private void botoncitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoncitoActionPerformed
 // TODO add your handling code here:    
         Usuario pk=new Usuario();
-        pk.setPeso(70);
-        pk.setAltura(1.68f);
+         //    pk.peso=70;   Forma incorrecta 
+    //    pk.altura=1.68f;  
+        //primero pedimos el valor de texto al primer campo
+    float peso=Float.parseFloat(textoPeso.getText());
+    pk.setPeso(peso);
+    //hacemos lo mismo paa la altura
+        pk.setPeso(peso);
+         float altura=Float.parseFloat(textoAltura.getText());
+        pk.setAltura(altura);
         imc modelo=new imc();
 modelo.u=pk;
 resultado.setText(modelo.calcular());
