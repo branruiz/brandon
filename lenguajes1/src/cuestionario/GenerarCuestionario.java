@@ -30,6 +30,4 @@ package cuestionario;
       
      return preguntas; 
      } 
-      
-31 } 
-
+ }
